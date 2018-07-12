@@ -1,0 +1,98 @@
+button{
+  border: 1px solid black;
+}
+
+button:hover{
+  background: #eeeeee;
+}
+
+#calculator{
+  width: 200px;
+  height: 250px;
+  background: blue;
+}
+
+#display{
+  height: 30px;
+  background: orange;
+}
+
+#displayBox{
+  float: left;
+  width: 148px;
+  height: 100%;
+  background: yellow;
+}
+
+#displayBox input{
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+}
+
+#clearBtn{
+  float: right;
+  width: 25%;
+  height: 100%;
+  background: brown;
+}
+
+#clearBtn button{
+  width: 100%;
+  height: 100%;
+}
+
+#numbers{
+  float: left;
+  width: 75%;
+  height: 176px;
+  background: red;
+}
+
+#oneToNine{
+  height: 75%;
+  background: green;
+}
+
+#oneToNine button{
+  margin: 0px;
+  padding: 0px;
+  width:33.33%;
+  height: 33.33%;
+  box-sizing: none;
+}
+
+#zero{
+  height: 25%;
+  background: purple;
+}
+
+#zero button{
+  width: 100%;
+  height: 100%;
+}
+
+#operators{
+  float: right;
+  height: 220px;
+  width: 25%;
+  background: cyan;
+}
+
+#operators button{
+  width: 100%;
+  height: 25%;
+}
+
+#equals{
+  display: inline-block;
+  height: 44px;
+  width: 75%;
+  background: black;
+  bottom: 0px;
+}
+
+#equals button{
+  width: 100%;
+  height: 100%;
+}
