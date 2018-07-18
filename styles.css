@@ -1,9 +1,16 @@
+input{
+  background: black;
+  color: white;
+}
+
 button{
   border: 1px solid black;
+  background: #7777cc;
+  color: white;
 }
 
 button:hover{
-  background: #eeeeee;
+  background: #bbbbff;
 }
 
 #calculator{
@@ -82,6 +89,12 @@ button:hover{
 #operators button{
   width: 100%;
   height: 25%;
+  background: black;
+  color: white;
+}
+
+#operators button:hover{
+  background: #777777;
 }
 
 #equals{
