@@ -28,7 +28,6 @@ let displayString = "";
 
 function updateDisplayBox(displayString){
   displayBox.value = displayString;
-  console.log(displayString);
 }
 
 function buttonDisplayEvent(button){
@@ -38,13 +37,17 @@ function buttonDisplayEvent(button){
 }
 
 function processDisplayString(){
-  let processingStack = displayString.split(/(\D)/g);
+  let processingStack = displayString.split(/(\+|\-|\*|\/)/g);
   while(processingStack.length >= 3){
-    processingStack[0] = operate(parseInt(processingStack[0]), processingStack[1], parseInt(processingStack[2]));
+    if(processingStack[0] === "") processingStack.shift();
+    if(processingStack[0] === "-" && processingStack[1] !== NaN){
+      processingStack[1] *= -1;
+      processingStack.shift();
+    }
+    processingStack[0] = operate(parseFloat(processingStack[0]), processingStack[1], parseFloat(processingStack[2]));
     processingStack.splice(1,2);
-    console.log(processingStack);
+    processingStack;
   }
-  console.log(processingStack);
   displayString = processingStack[0];
   updateDisplayBox(displayString);
 }
